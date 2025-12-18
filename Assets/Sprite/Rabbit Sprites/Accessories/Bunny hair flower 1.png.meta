@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 5a5656d22e8f6bc4c8d405e5bf98d897
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8327106098271610562
+    second: Bunny hair flower 1_0
+  - first:
+      213: 5274581552665985200
+    second: Bunny hair flower 1_1
+  - first:
+      213: -7550261747640856321
+    second: Bunny hair flower 1_2
+  - first:
+      213: -7780450375499027213
+    second: Bunny hair flower 1_3
+  - first:
+      213: -1540525119288973581
+    second: Bunny hair flower 1_4
+  - first:
+      213: -3986321885200273372
+    second: Bunny hair flower 1_5
+  - first:
+      213: -5343312447761057794
+    second: Bunny hair flower 1_6
+  - first:
+      213: 7391834988411786960
+    second: Bunny hair flower 1_7
+  - first:
+      213: 2074063673353035284
+    second: Bunny hair flower 1_8
+  - first:
+      213: -6223777011825769650
+    second: Bunny hair flower 1_9
+  - first:
+      213: 2278809652293963449
+    second: Bunny hair flower 1_10
+  - first:
+      213: -1560261867794365307
+    second: Bunny hair flower 1_11
+  - first:
+      213: 3910205889878679848
+    second: Bunny hair flower 1_12
+  - first:
+      213: 2531876015876626182
+    second: Bunny hair flower 1_13
+  - first:
+      213: -5767629382445381409
+    second: Bunny hair flower 1_14
+  - first:
+      213: -3375791051177818545
+    second: Bunny hair flower 1_15
+  - first:
+      213: 6144483218533100198
+    second: Bunny hair flower 1_16
+  - first:
+      213: 3406050834044733346
+    second: Bunny hair flower 1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bunny hair flower 1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 174
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6e772a0e2df8370800000000000000
+      internalID: 8327106098271610562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 174
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b00c79e9f3133940800000000000000
+      internalID: 5274581552665985200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 175
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff095aa81f4183790800000000000000
+      internalID: -7550261747640856321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 175
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc63d72b99460490800000000000000
+      internalID: -7780450375499027213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 174
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6e639e094fe9ae0800000000000000
+      internalID: -1540525119288973581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 174
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420b548ad5dbda8c0800000000000000
+      internalID: -3986321885200273372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 123
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7774b83adb8d5b0800000000000000
+      internalID: -5343312447761057794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 124
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6969222c2159660800000000000000
+      internalID: 7391834988411786960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 123
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41edfbb0ced88cc10800000000000000
+      internalID: 2074063673353035284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 75
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4302e068c3b0a9a0800000000000000
+      internalID: -6223777011825769650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 77
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be86bb1e45ff9f10800000000000000
+      internalID: 2278809652293963449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 76
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584878d0916d85ae0800000000000000
+      internalID: -1560261867794365307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 29
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821ebd82a87d34630800000000000000
+      internalID: 3910205889878679848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 29
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60758ad62d7032320800000000000000
+      internalID: 2531876015876626182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8cc3782a345ffa0800000000000000
+      internalID: -5767629382445381409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f468a96bce7c621d0800000000000000
+      internalID: -3375791051177818545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_16
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aaa301bee6954550800000000000000
+      internalID: 6144483218533100198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny hair flower 1_17
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c8220039b44f20800000000000000
+      internalID: 3406050834044733346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bunny hair flower 1_0: 8327106098271610562
+      Bunny hair flower 1_1: 5274581552665985200
+      Bunny hair flower 1_10: 2278809652293963449
+      Bunny hair flower 1_11: -1560261867794365307
+      Bunny hair flower 1_12: 3910205889878679848
+      Bunny hair flower 1_13: 2531876015876626182
+      Bunny hair flower 1_14: -5767629382445381409
+      Bunny hair flower 1_15: -3375791051177818545
+      Bunny hair flower 1_16: 6144483218533100198
+      Bunny hair flower 1_17: 3406050834044733346
+      Bunny hair flower 1_2: -7550261747640856321
+      Bunny hair flower 1_3: -7780450375499027213
+      Bunny hair flower 1_4: -1540525119288973581
+      Bunny hair flower 1_5: -3986321885200273372
+      Bunny hair flower 1_6: -5343312447761057794
+      Bunny hair flower 1_7: 7391834988411786960
+      Bunny hair flower 1_8: 2074063673353035284
+      Bunny hair flower 1_9: -6223777011825769650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

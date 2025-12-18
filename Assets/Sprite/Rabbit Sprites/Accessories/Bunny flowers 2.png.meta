@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 6add4c197beaf7f46b834d9f8fe00a5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2475526545781848182
+    second: Bunny flowers 2_0
+  - first:
+      213: 4198403715644106934
+    second: Bunny flowers 2_1
+  - first:
+      213: 267733030233984268
+    second: Bunny flowers 2_2
+  - first:
+      213: -4704259495213655650
+    second: Bunny flowers 2_3
+  - first:
+      213: -6179526566977351572
+    second: Bunny flowers 2_4
+  - first:
+      213: 5759538809616124087
+    second: Bunny flowers 2_5
+  - first:
+      213: 585941818899822100
+    second: Bunny flowers 2_6
+  - first:
+      213: 910722178663157562
+    second: Bunny flowers 2_7
+  - first:
+      213: -6542359291045331064
+    second: Bunny flowers 2_8
+  - first:
+      213: 4368695616727763740
+    second: Bunny flowers 2_9
+  - first:
+      213: 7030772953477570943
+    second: Bunny flowers 2_10
+  - first:
+      213: 6295398235229776653
+    second: Bunny flowers 2_11
+  - first:
+      213: -97492782686925922
+    second: Bunny flowers 2_12
+  - first:
+      213: -1810045128427745301
+    second: Bunny flowers 2_13
+  - first:
+      213: -2813124654832821479
+    second: Bunny flowers 2_14
+  - first:
+      213: 5996419527848372670
+    second: Bunny flowers 2_15
+  - first:
+      213: 5799750769887150249
+    second: Bunny flowers 2_16
+  - first:
+      213: 4771586015399137242
+    second: Bunny flowers 2_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bunny flowers 2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 174
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67870690746da5220800000000000000
+      internalID: 2475526545781848182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 174
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8a5ae6fe9b34a30800000000000000
+      internalID: 4198403715644106934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 175
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d4cb1c5cd27b300800000000000000
+      internalID: 267733030233984268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 175
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e991880d9ec17beb0800000000000000
+      internalID: -4704259495213655650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 173
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60d93fe359ed3aa0800000000000000
+      internalID: -6179526566977351572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 173
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8ce31380efdef40800000000000000
+      internalID: 5759538809616124087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 123
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416f196dafea12800800000000000000
+      internalID: 585941818899822100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 124
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f894c0ff883ac00800000000000000
+      internalID: 910722178663157562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 123
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f344043eed435a0800000000000000
+      internalID: -6542359291045331064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 75
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b4dde5489b0ac30800000000000000
+      internalID: 4368695616727763740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 76
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71647420c2529160800000000000000
+      internalID: 7030772953477570943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 75
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bed7a275fbd5750800000000000000
+      internalID: 6295398235229776653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 28
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b08c7a4d2a5aef0800000000000000
+      internalID: -97492782686925922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 28
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef43a4bb8d61e6e0800000000000000
+      internalID: -1810045128427745301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 29
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bdbcfe706c5f8d0800000000000000
+      internalID: -2813124654832821479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 29
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb92e994acf873350800000000000000
+      internalID: 5996419527848372670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 28
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a00ce8c89adc7050800000000000000
+      internalID: 5799750769887150249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bunny flowers 2_17
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 28
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf46173334183240800000000000000
+      internalID: 4771586015399137242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bunny flowers 2_0: 2475526545781848182
+      Bunny flowers 2_1: 4198403715644106934
+      Bunny flowers 2_10: 7030772953477570943
+      Bunny flowers 2_11: 6295398235229776653
+      Bunny flowers 2_12: -97492782686925922
+      Bunny flowers 2_13: -1810045128427745301
+      Bunny flowers 2_14: -2813124654832821479
+      Bunny flowers 2_15: 5996419527848372670
+      Bunny flowers 2_16: 5799750769887150249
+      Bunny flowers 2_17: 4771586015399137242
+      Bunny flowers 2_2: 267733030233984268
+      Bunny flowers 2_3: -4704259495213655650
+      Bunny flowers 2_4: -6179526566977351572
+      Bunny flowers 2_5: 5759538809616124087
+      Bunny flowers 2_6: 585941818899822100
+      Bunny flowers 2_7: 910722178663157562
+      Bunny flowers 2_8: -6542359291045331064
+      Bunny flowers 2_9: 4368695616727763740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
