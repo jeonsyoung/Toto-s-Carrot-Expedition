@@ -580,6 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeb9076aa1a9f245a27d33c20d34248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: LevelSet
 --- !u!114 &589577146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +627,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 589577145}
         m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: GameStart
+        m_MethodName: SceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1082,6 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeb9076aa1a9f245a27d33c20d34248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: 
 --- !u!114 &1106756966
 MonoBehaviour:
   m_ObjectHideFlags: 0

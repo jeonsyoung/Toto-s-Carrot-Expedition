@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class OnClick : MonoBehaviour
 {
-    public void GameStart()
+
+    public string SceneName;
+    public void SceneChange()
     {
-        SceneManager.LoadScene("LevelSet");
+        SceneManager.LoadScene(SceneName);
     }
 
     // Update is called once per frame
