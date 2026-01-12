@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 8ccba4b4faab8484daa6593d44c6f7e9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rabbit_Front: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+  - rabbit_Right: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+  - rabbit_Left: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+  - rabbit_Back: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+  - cur_Rabbit: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

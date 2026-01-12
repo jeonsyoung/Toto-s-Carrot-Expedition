@@ -3,116 +3,155 @@ using UnityEngine;
 
 public class IngameCoding : MonoBehaviour
 {
+    Vector3 startPos;
+    RabbitDir startDir;
+
     public enum RabbitDir
     {
         Front,
         Right,
-        Left,
-        Back
+        Back,
+        Left
     }
 
     public Sprite rabbit_Front;
     public Sprite rabbit_Right;
     public Sprite rabbit_Left;
     public Sprite rabbit_Back;
-    
+
     public SpriteRenderer cur_Rabbit;
+    public RabbitDir curDir;
 
-    public RabbitDir curDir; // 현재 방향 상태
+    public float moveDistance = 1.5f;
+    public LayerMask pathLayer;   // Path 레이어
 
-    private void Start()
+    BoxCollider2D col;
+    
+    bool reachedPortal = false;
+
+    bool isTouchingCarrot = false;
+    bool hasCarrot = false;
+    GameObject carrot;
+
+    void Awake()
     {
-        // 시작 방향 (원하는 값으로)
+        col = GetComponent<BoxCollider2D>();
+        startPos = transform.position;
+        startDir = curDir;
+
+        carrot = GameObject.FindGameObjectWithTag("Carrot");
+    }
+
+
+    void Start()
+    {
         curDir = RabbitDir.Right;
+        startDir = curDir;
+        startPos = transform.position;
         UpdateSprite();
     }
+
+
+    public IEnumerator PushButton() { yield return new WaitForSeconds(1f); }
+    public IEnumerator CarrotGet()
+    {
+        if (isTouchingCarrot && !hasCarrot)
+        {
+            hasCarrot = true;
+
+            if (carrot != null)
+                carrot.SetActive(false);
+
+            LevelManager.Instance.ShowCarrotIcon();
+        }
+
+        yield return new WaitForSeconds(1f);
+    }
+
+
+
+    public void ResetRabbit()
+    {
+        StopAllCoroutines();
+        transform.position = startPos;
+        curDir = startDir;
+        reachedPortal = false;
+
+        hasCarrot = false;
+        isTouchingCarrot = false;
+
+        //  당근 다시 등장
+        if (carrot != null)
+            carrot.SetActive(true);
+
+        LevelManager.Instance.HideCarrotIcon();
+
+        UpdateSprite();
+    }
+
+
 
     // ================= 이동 =================
     public IEnumerator MoveForward()
     {
-        Debug.Log("MoveForward 실행됨");
-        Vector3 dir = Vector3.zero;
+        Vector3 dir = GetDirectionVector();
+        Vector3 prevPos = transform.position;
 
-        switch (curDir)
+        //일단 이동
+        transform.position += dir * moveDistance;
+
+        //물리 판정 한 프레임 대기
+        yield return new WaitForFixedUpdate();
+
+        //길인지 체크
+        if (!IsOnPath())
         {
-            case RabbitDir.Front:
-                dir = Vector3.up;
-                break;
-            case RabbitDir.Right:
-                dir = Vector3.right;
-                break;
-            case RabbitDir.Left:
-                dir = Vector3.left;
-                break;
-            case RabbitDir.Back:
-                dir = Vector3.down;
-                break;
+            // 길 아니면 되돌리기
+            transform.position = prevPos;
         }
 
-        transform.position += dir * 1.5f;
         yield return new WaitForSeconds(1f);
+    }
+
+    bool IsOnPath()
+    {
+        // 콜라이더 중심 기준으로 겹침 검사
+        Collider2D hit = Physics2D.OverlapBox(
+            col.bounds.center,
+            col.bounds.size * 0.8f,
+            0f,
+            pathLayer
+        );
+
+        return hit != null;
     }
 
     // ================= 회전 =================
     public IEnumerator TurnRight()
     {
-        switch (curDir)
-        {
-            case RabbitDir.Front:
-                curDir = RabbitDir.Right;
-                break;
-            case RabbitDir.Right:
-                curDir = RabbitDir.Back;
-                break;
-            case RabbitDir.Back:
-                curDir = RabbitDir.Left;
-                break;
-            case RabbitDir.Left:
-                curDir = RabbitDir.Front;
-                break;
-        }
-
+        curDir = (RabbitDir)(((int)curDir + 1) % 4);
         UpdateSprite();
         yield return new WaitForSeconds(1f);
     }
 
     public IEnumerator TurnLeft()
     {
-        switch (curDir)
-        {
-            case RabbitDir.Front:
-                curDir = RabbitDir.Left;
-                break;
-            case RabbitDir.Left:
-                curDir = RabbitDir.Back;
-                break;
-            case RabbitDir.Back:
-                curDir = RabbitDir.Right;
-                break;
-            case RabbitDir.Right:
-                curDir = RabbitDir.Front;
-                break;
-        }
-
+        curDir = (RabbitDir)(((int)curDir + 3) % 4);
         UpdateSprite();
         yield return new WaitForSeconds(1f);
     }
 
-    // ================= 기타 =================
-    public IEnumerator Jump() // 2칸 전진
+    public IEnumerator Jump()
     {
+        Vector3 prevPos = transform.position;
         Vector3 dir = GetDirectionVector();
-        transform.position += dir * 3f; // 1.5f * 2
-        yield return new WaitForSeconds(1f);
-    }
 
-    public IEnumerator PushButton()
-    {
-        yield return new WaitForSeconds(1f);
-    }
+        transform.position += dir * moveDistance * 2;
+        yield return new WaitForFixedUpdate();
 
-    public IEnumerator CarrotGet()
-    {
+        if (!IsOnPath())
+            transform.position = prevPos;
+
         yield return new WaitForSeconds(1f);
     }
 
@@ -121,10 +160,10 @@ public class IngameCoding : MonoBehaviour
     {
         switch (curDir)
         {
-            case RabbitDir.Front: return Vector3.right;
-            case RabbitDir.Right: return Vector3.up;
-            case RabbitDir.Left: return Vector3.down;
-            case RabbitDir.Back: return Vector3.left;
+            case RabbitDir.Front: return Vector3.down;
+            case RabbitDir.Right: return Vector3.right;
+            case RabbitDir.Back: return Vector3.up;
+            case RabbitDir.Left: return Vector3.left;
         }
         return Vector3.zero;
     }
@@ -133,18 +172,38 @@ public class IngameCoding : MonoBehaviour
     {
         switch (curDir)
         {
-            case RabbitDir.Front:
-                cur_Rabbit.sprite = rabbit_Front;
-                break;
-            case RabbitDir.Right:
-                cur_Rabbit.sprite = rabbit_Right;
-                break;
-            case RabbitDir.Left:
-                cur_Rabbit.sprite = rabbit_Left;
-                break;
-            case RabbitDir.Back:
-                cur_Rabbit.sprite = rabbit_Back;
-                break;
+            case RabbitDir.Front: cur_Rabbit.sprite = rabbit_Front; break;
+            case RabbitDir.Right: cur_Rabbit.sprite = rabbit_Right; break;
+            case RabbitDir.Left: cur_Rabbit.sprite = rabbit_Left; break;
+            case RabbitDir.Back: cur_Rabbit.sprite = rabbit_Back; break;
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Carrot"))
+        {
+            isTouchingCarrot = true;
+        }
+        else if (other.CompareTag("Portal"))
+        {
+            reachedPortal = true;
+            LevelManager.Instance.OnReachPortal();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Carrot"))
+        {
+            isTouchingCarrot = false;
+        }
+    }
+
+
+
+    public bool HasReachedPortal()
+    {
+        return reachedPortal;
+    }
+
 }
