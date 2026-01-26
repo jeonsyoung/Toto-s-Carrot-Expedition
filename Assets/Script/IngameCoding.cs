@@ -23,7 +23,6 @@ public class IngameCoding : MonoBehaviour
     public RabbitDir curDir;
 
     public float moveDistance = 1.5f;
-    public LayerMask pathLayer;   // Path 레이어
 
     BoxCollider2D col;
     
@@ -32,6 +31,8 @@ public class IngameCoding : MonoBehaviour
     bool isTouchingCarrot = false;
     bool hasCarrot = false;
     GameObject carrot;
+
+    public ButtonTile currentButton;
 
     void Awake()
     {
@@ -52,7 +53,14 @@ public class IngameCoding : MonoBehaviour
     }
 
 
-    public IEnumerator PushButton() { yield return new WaitForSeconds(1f); }
+    public IEnumerator PushButton()
+    {
+        if (currentButton != null)
+            currentButton.Press();
+
+        yield return new WaitForSeconds(1f);
+    }
+
     public IEnumerator CarrotGet()
     {
         if (isTouchingCarrot && !hasCarrot)
@@ -92,25 +100,53 @@ public class IngameCoding : MonoBehaviour
 
 
     // ================= 이동 =================
+    public LayerMask pathLayer;
+    public LayerMask obstacleLayer; // 문, 벽 레이어
+
     public IEnumerator MoveForward()
     {
         Vector3 dir = GetDirectionVector();
         Vector3 prevPos = transform.position;
 
-        //일단 이동
+        // 일단 이동
         transform.position += dir * moveDistance;
 
-        //물리 판정 한 프레임 대기
+        // 물리 판정 기다림
         yield return new WaitForFixedUpdate();
 
-        //길인지 체크
-        if (!IsOnPath())
+        // 길이 아니거나 / 문에 막히면
+        if (!IsOnPath() || IsBlocked())
         {
-            // 길 아니면 되돌리기
             transform.position = prevPos;
         }
 
         yield return new WaitForSeconds(1f);
+    }
+
+    bool IsBlocked()
+    {
+        Collider2D hit = Physics2D.OverlapBox(
+            col.bounds.center,
+            col.bounds.size * 0.9f,
+            0f,
+            obstacleLayer
+        );
+
+        if (hit != null)
+            Debug.Log("문/장애물에 막힘: " + hit.name);
+
+        return hit != null;
+    }
+    bool IsBlockedAt(Vector3 pos)
+    {
+        Collider2D hit = Physics2D.OverlapBox(
+            pos,
+            col.bounds.size * 0.9f,
+            0f,
+            obstacleLayer
+        );
+
+        return hit != null;
     }
 
     bool IsOnPath()
@@ -146,14 +182,28 @@ public class IngameCoding : MonoBehaviour
         Vector3 prevPos = transform.position;
         Vector3 dir = GetDirectionVector();
 
-        transform.position += dir * moveDistance * 2;
+        Vector3 midPos = prevPos + dir * moveDistance;
+        Vector3 endPos = prevPos + dir * moveDistance * 2;
+
+        // 중간 칸 → 문(Obstacle)만 체크
+        if (IsBlockedAt(midPos))
+        {
+            Debug.Log("점프 실패: 중간에 문 있음");
+            yield break;
+        }
+
+        transform.position = endPos;
         yield return new WaitForFixedUpdate();
 
-        if (!IsOnPath())
+        if (!IsOnPath() || IsBlocked())
+        {
             transform.position = prevPos;
+            yield break;
+        }
 
         yield return new WaitForSeconds(1f);
     }
+
 
     // ================= 공통 =================
     Vector3 GetDirectionVector()

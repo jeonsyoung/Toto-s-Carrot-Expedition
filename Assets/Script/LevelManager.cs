@@ -3,12 +3,11 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
-
-    public int currentClearLevel = 0;
 
     public List<int> CodingList = new List<int>();
     public int selectedIndex = -1;
@@ -33,6 +32,51 @@ public class LevelManager : MonoBehaviour
     [Header("Carrot UI")] 
     public GameObject carrotIcon;
 
+    [Header("Score")]
+    public int optimalBlockCount = 5; // 이 레벨 최소 해답
+
+    [Header("Star UI")]
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+
+    public GameObject ScorePanel;
+
+    public GameObject carrotStar;
+
+    public TextMeshProUGUI starText;
+
+    void ShowStars(int score)
+    {
+        star1.SetActive(score >= 1);
+        star2.SetActive(score >= 2);
+        star3.SetActive(score >= 3);
+    }
+    void SaveScore(int score)
+    {
+        string key = "LevelScore_" + SceneManager.GetActiveScene().name;
+
+        int best = PlayerPrefs.GetInt(key, 0);
+
+        if (score > best)
+        {
+            PlayerPrefs.SetInt(key, score);
+            PlayerPrefs.Save();
+        }
+    }
+
+    int CalculateScore()
+    {
+        int used = CodingList.Count;
+
+        if (used <= optimalBlockCount)
+            return 3;
+        else if (used <= optimalBlockCount + 3)
+            return 2;
+        else
+            return 1;
+    }
+
     public void ShowCarrotIcon()
     {
         if (carrotIcon != null)
@@ -49,6 +93,7 @@ public class LevelManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        ScorePanel.SetActive(false);
     }
 
     // ================= 상태 =================
@@ -235,20 +280,28 @@ public class LevelManager : MonoBehaviour
 
         isCleared = true;
 
+        int score = CalculateScore();
+
+        ShowStars(score);
+        SaveScore(score);
+
         ClearHighlight();
-        FinishPlay(); 
-        ClearLevel();
+        FinishPlay();
 
-        Debug.Log("레벨 클리어!");
-    }
+        Debug.Log("클리어! 점수: " + score);
+        carrotStar.SetActive(false);
 
+        GameManager.Instance.s_Stars += score;
+        if (carrotIcon != null && carrotIcon.activeSelf)
+        {
+            GameManager.Instance.s_Stars += 1;
+            carrotStar.SetActive(true);
+        }
+        starText.text = GameManager.Instance.s_Stars.ToString();
 
-    public void ClearLevel()
-    {
-        currentClearLevel++;
-        //TO-do 점수 띄우기
+        ScorePanel.SetActive(true);
 
-        SceneManager.LoadScene("LevelSet");
+        GameManager.Instance.currentClearLevel++;
     }
 
     public void OnCarrotCollected()

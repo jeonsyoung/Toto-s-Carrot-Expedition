@@ -23,7 +23,7 @@ public class LevelButton : MonoBehaviour
 
     public void UpdateState()
     {
-        int cleared = LevelManager.Instance.currentClearLevel;
+        int cleared = GameManager.Instance.currentClearLevel;
 
         // 이전 레벨을 클리어했으면 해금
         if (levelIndex == cleared + 1)

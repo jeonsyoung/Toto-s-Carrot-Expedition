@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8672057396387095690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3352316735911276278}
+  - component: {fileID: 7552273495776997084}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3352316735911276278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672057396387095690}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7552273495776997084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672057396387095690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec5d678918cfae46af794b603dcf2e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentClearLevel: 0
+  CodingList: 
+  selectedIndex: -1
+  ingame: {fileID: 0}
+  blockPrefab: {fileID: 6931746458908562523, guid: 5f5d2eac0bbf9be4a93396b9fb8ce043, type: 3}
+  arrowPrefab: {fileID: 6953715041129514879, guid: b11a2742e67092441be347c5d82183e2, type: 3}
+  content: {fileID: 0}
+  scrollRect: {fileID: 0}
+  playButtonImage: {fileID: 0}
+  playSprite: {fileID: 316594803166377029, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
+  playingSprite: {fileID: -8249452332903114564, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
+  carrotIcon: {fileID: 0}
+  optimalBlockCount: 7
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
+  ScorePanel: {fileID: 0}
