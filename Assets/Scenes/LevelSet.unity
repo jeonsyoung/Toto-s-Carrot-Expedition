@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level9
+  CodingType: 0
 --- !u!114 &521444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,6 +1448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level3
+  CodingType: 0
 --- !u!114 &452628982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1748,6 +1750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level1
+  CodingType: 0
 --- !u!114 &539805334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,6 +2003,7 @@ GameObject:
   - component: {fileID: 612242393}
   - component: {fileID: 612242392}
   - component: {fileID: 612242391}
+  - component: {fileID: 612242394}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -2070,7 +2074,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 612242392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 612242394}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: SceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &612242392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2109,6 +2125,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612242389}
   m_CullTransparentMesh: 1
+--- !u!114 &612242394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612242389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaeb9076aa1a9f245a27d33c20d34248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Shop
+  CodingType: 0
 --- !u!1 &623479462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: 
+  CodingType: 0
 --- !u!1 &688235490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,6 +2571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level12
+  CodingType: 0
 --- !u!114 &688235496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2841,6 +2873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level10
+  CodingType: 0
 --- !u!114 &919727047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3006,6 +3039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level4
+  CodingType: 0
 --- !u!114 &921717993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3171,6 +3205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level6
+  CodingType: 0
 --- !u!114 &934053343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3336,6 +3371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level7
+  CodingType: 0
 --- !u!114 &1027162278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3773,6 +3809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level15
+  CodingType: 0
 --- !u!114 &1174528502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3938,6 +3975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level2
+  CodingType: 0
 --- !u!114 &1198495547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4238,6 +4276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: GameTitle
+  CodingType: 0
 --- !u!1 &1324467076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,6 +4694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level11
+  CodingType: 0
 --- !u!114 &1541048756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4820,6 +4860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level13
+  CodingType: 0
 --- !u!114 &1598007276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,6 +5571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level8
+  CodingType: 0
 --- !u!114 &1896936515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5831,6 +5873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level14
+  CodingType: 0
 --- !u!114 &2001694194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6132,6 +6175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Level5
+  CodingType: 0
 --- !u!114 &2111104314
 MonoBehaviour:
   m_ObjectHideFlags: 0

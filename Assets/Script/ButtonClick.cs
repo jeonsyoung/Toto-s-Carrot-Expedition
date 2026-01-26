@@ -5,6 +5,7 @@ public class ButtonClick : MonoBehaviour
 {
     public string SceneName;
     public int CodingType;
+    public int SkinType;
 
     public void SceneChange()
     {

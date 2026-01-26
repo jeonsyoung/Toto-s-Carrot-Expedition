@@ -298,7 +298,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &922550892
@@ -798,6 +798,46 @@ PrefabInstance:
     - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.back
+      value: 
+      objectReference: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.left
+      value: 
+      objectReference: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.back
+      value: 
+      objectReference: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.left
+      value: 
+      objectReference: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.front
+      value: 
+      objectReference: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.right
+      value: 
+      objectReference: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.front
+      value: 
+      objectReference: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.right
+      value: 
+      objectReference: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.isPurchased
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.isPurchased
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

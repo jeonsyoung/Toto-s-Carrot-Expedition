@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class IngameCoding : MonoBehaviour
 {
+    public static IngameCoding Instance;
+
     Vector3 startPos;
     RabbitDir startDir;
 
@@ -14,10 +16,10 @@ public class IngameCoding : MonoBehaviour
         Left
     }
 
-    public Sprite rabbit_Front;
-    public Sprite rabbit_Right;
-    public Sprite rabbit_Left;
-    public Sprite rabbit_Back;
+    Sprite rabbit_Front;
+    Sprite rabbit_Right;
+    Sprite rabbit_Left;
+    Sprite rabbit_Back;
 
     public SpriteRenderer cur_Rabbit;
     public RabbitDir curDir;
@@ -43,12 +45,24 @@ public class IngameCoding : MonoBehaviour
         carrot = GameObject.FindGameObjectWithTag("Carrot");
     }
 
-
     void Start()
     {
         curDir = RabbitDir.Right;
         startDir = curDir;
         startPos = transform.position;
+        UpdateSprite();
+        ApplySkin();
+    }
+
+    public void ApplySkin()
+    {
+        PlayerSkin skin = GameManager.Instance.currentSkin;
+
+        rabbit_Front = skin.front;
+        rabbit_Right = skin.right;
+        rabbit_Left = skin.left;
+        rabbit_Back = skin.back;
+
         UpdateSprite();
     }
 
