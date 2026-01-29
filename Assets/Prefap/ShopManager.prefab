@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &534270267679409841
+--- !u!1 &4220476761980469157
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2581043685029422525}
-  - component: {fileID: 3212145096423174111}
+  - component: {fileID: 939842265270080702}
+  - component: {fileID: 2720684454468996306}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: ShopManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2581043685029422525
+--- !u!4 &939842265270080702
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534270267679409841}
+  m_GameObject: {fileID: 4220476761980469157}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,81 +32,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3212145096423174111
+--- !u!114 &2720684454468996306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534270267679409841}
+  m_GameObject: {fileID: 4220476761980469157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b53b92b12e7e021418c49ca99b21b0e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8017110421acea544a771dda69f7b375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentClearLevel: 0
-  currentPlayingLevel: 0
-  s_Stars: 0
-  currentSkin:
+  starCount: {fileID: 0}
+  Skin1:
     front: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
     right: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
     left: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
     back: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
     price: 10
     isPurchased: 0
-  defaultSkin:
-    front: {fileID: 0}
-    right: {fileID: 0}
-    left: {fileID: 0}
-    back: {fileID: 0}
-    price: 10
-    isPurchased: 0
-  allSkins:
-  - front: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
-    right: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
-    left: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
-    back: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
-    price: 10
-    isPurchased: 1
-  - front: {fileID: 2143074047004095075, guid: 68fa7a1404f884e4caba1874783f2665, type: 3}
+  Skin2:
+    front: {fileID: 2143074047004095075, guid: 68fa7a1404f884e4caba1874783f2665, type: 3}
     right: {fileID: -8667055132793315274, guid: 68fa7a1404f884e4caba1874783f2665, type: 3}
     left: {fileID: -7580370628585499445, guid: 68fa7a1404f884e4caba1874783f2665, type: 3}
     back: {fileID: -4901456312845475675, guid: 68fa7a1404f884e4caba1874783f2665, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: 3138928192837322512, guid: 11b5a2f9b2da593418a798d9e45251f0, type: 3}
+  Skin3:
+    front: {fileID: 3138928192837322512, guid: 11b5a2f9b2da593418a798d9e45251f0, type: 3}
     right: {fileID: 4627623237452742615, guid: 11b5a2f9b2da593418a798d9e45251f0, type: 3}
     left: {fileID: -4868107442887966703, guid: 11b5a2f9b2da593418a798d9e45251f0, type: 3}
     back: {fileID: -2977751880678810933, guid: 11b5a2f9b2da593418a798d9e45251f0, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: 2289880044020588065, guid: 13fa9c77c04337745bb63395c7ade728, type: 3}
+  Skin4:
+    front: {fileID: 2289880044020588065, guid: 13fa9c77c04337745bb63395c7ade728, type: 3}
     right: {fileID: 2053046224344608468, guid: 13fa9c77c04337745bb63395c7ade728, type: 3}
     left: {fileID: 3279435548612222071, guid: 13fa9c77c04337745bb63395c7ade728, type: 3}
     back: {fileID: 6030809422883604715, guid: 13fa9c77c04337745bb63395c7ade728, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: -3857476099576973975, guid: b6cf5e87806a5b0419ad1e06a97879e8, type: 3}
+  Skin5:
+    front: {fileID: -3857476099576973975, guid: b6cf5e87806a5b0419ad1e06a97879e8, type: 3}
     right: {fileID: -251765647084980230, guid: b6cf5e87806a5b0419ad1e06a97879e8, type: 3}
     left: {fileID: 4451331599427053319, guid: b6cf5e87806a5b0419ad1e06a97879e8, type: 3}
     back: {fileID: 8141328868840120943, guid: b6cf5e87806a5b0419ad1e06a97879e8, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: -6914469469562199193, guid: 600d0945c5402fc438eb03474f8f76a8, type: 3}
+  Skin6:
+    front: {fileID: -6914469469562199193, guid: 600d0945c5402fc438eb03474f8f76a8, type: 3}
     right: {fileID: 2183960541151928569, guid: 600d0945c5402fc438eb03474f8f76a8, type: 3}
     left: {fileID: 6562558076123982260, guid: 600d0945c5402fc438eb03474f8f76a8, type: 3}
     back: {fileID: -6298458783073381245, guid: 600d0945c5402fc438eb03474f8f76a8, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: 3403535877401685713, guid: e8496016173c980449fdce28c23d8aa7, type: 3}
+  Skin7:
+    front: {fileID: 3403535877401685713, guid: e8496016173c980449fdce28c23d8aa7, type: 3}
     right: {fileID: 3425672622408697685, guid: e8496016173c980449fdce28c23d8aa7, type: 3}
     left: {fileID: 5981154241789115999, guid: e8496016173c980449fdce28c23d8aa7, type: 3}
     back: {fileID: 7081460837441309568, guid: e8496016173c980449fdce28c23d8aa7, type: 3}
     price: 10
     isPurchased: 0
-  - front: {fileID: -1094627373636037542, guid: d15f2bba48ea3cd4d9f82d3ca797420d, type: 3}
+  Skin8:
+    front: {fileID: -1094627373636037542, guid: d15f2bba48ea3cd4d9f82d3ca797420d, type: 3}
     right: {fileID: 2214577685932767040, guid: d15f2bba48ea3cd4d9f82d3ca797420d, type: 3}
     left: {fileID: 5138055930897700314, guid: d15f2bba48ea3cd4d9f82d3ca797420d, type: 3}
     back: {fileID: 4795767035037984395, guid: d15f2bba48ea3cd4d9f82d3ca797420d, type: 3}
+    price: 10
+    isPurchased: 0
+  curSkin: {fileID: 0}
+  thisSkin:
+    front: {fileID: 0}
+    right: {fileID: 0}
+    left: {fileID: 0}
+    back: {fileID: 0}
     price: 10
     isPurchased: 0

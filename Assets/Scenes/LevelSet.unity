@@ -204,9 +204,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 521443}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 521444}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level9
   CodingType: 0
+  SkinType: 0
 --- !u!114 &521444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 9
+  Levelnum: 9
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 262118266}
@@ -1385,9 +1386,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 452628981}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 452628982}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1449,6 +1450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level3
   CodingType: 0
+  SkinType: 0
 --- !u!114 &452628982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,7 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 3
+  Levelnum: 3
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1088233882}
@@ -1687,9 +1689,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539805333}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 539805334}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1751,6 +1753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level1
   CodingType: 0
+  SkinType: 0
 --- !u!114 &539805334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 1
+  Levelnum: 1
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1847046067}
@@ -2139,6 +2142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Shop
   CodingType: 0
+  SkinType: 0
 --- !u!1 &623479462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: 
   CodingType: 0
+  SkinType: 0
 --- !u!1 &688235490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,9 +2513,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 688235495}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 688235496}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2572,6 +2577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level12
   CodingType: 0
+  SkinType: 0
 --- !u!114 &688235496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2584,7 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 12
+  Levelnum: 12
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 623479462}
@@ -2810,9 +2816,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 919727046}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 919727047}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2874,6 +2880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level10
   CodingType: 0
+  SkinType: 0
 --- !u!114 &919727047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,7 +2893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 10
+  Levelnum: 10
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 852448457}
@@ -2976,9 +2983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921717992}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 921717993}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3040,6 +3047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level4
   CodingType: 0
+  SkinType: 0
 --- !u!114 &921717993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3052,7 +3060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 4
+  Levelnum: 4
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1705091011}
@@ -3142,9 +3150,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 934053342}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 934053343}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3206,6 +3214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level6
   CodingType: 0
+  SkinType: 0
 --- !u!114 &934053343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3218,7 +3227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 6
+  Levelnum: 6
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1097543893}
@@ -3308,9 +3317,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1027162277}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1027162278}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3372,6 +3381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level7
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1027162278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3384,7 +3394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 7
+  Levelnum: 7
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 44557614}
@@ -3746,9 +3756,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1174528501}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1174528502}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3810,6 +3820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level15
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1174528502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3822,7 +3833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 15
+  Levelnum: 15
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 112000834}
@@ -3912,9 +3923,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1198495546}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1198495547}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3976,6 +3987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level2
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1198495547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,7 +4000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 2
+  Levelnum: 2
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1934383851}
@@ -4277,6 +4289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: GameTitle
   CodingType: 0
+  SkinType: 0
 --- !u!1 &1324467076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4631,9 +4644,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1541048755}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1541048756}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4695,6 +4708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level11
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1541048756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4707,7 +4721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 11
+  Levelnum: 11
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 2037912048}
@@ -4797,9 +4811,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1598007275}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1598007276}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4861,6 +4875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level13
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1598007276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4873,7 +4888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 13
+  Levelnum: 13
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 385407656}
@@ -5508,9 +5523,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1896936514}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 1896936515}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5572,6 +5587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level8
   CodingType: 0
+  SkinType: 0
 --- !u!114 &1896936515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5584,7 +5600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 8
+  Levelnum: 8
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 1218871563}
@@ -5725,6 +5741,111 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934383851}
   m_CullTransparentMesh: 1
+--- !u!1001 &1988819956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 534270267679409841, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581043685029422525, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: levelIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.back
+      value: 
+      objectReference: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.left
+      value: 
+      objectReference: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.back
+      value: 
+      objectReference: {fileID: 6400580791780149285, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.left
+      value: 
+      objectReference: {fileID: -8617402575032506655, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.front
+      value: 
+      objectReference: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.right
+      value: 
+      objectReference: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.front
+      value: 
+      objectReference: {fileID: -4192493869038141063, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.right
+      value: 
+      objectReference: {fileID: -6697428708718080017, guid: 9e07a06df8d423a48adb8301f8fa2676, type: 3}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentPlayingLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: currentSkin.isPurchased
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212145096423174111, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
+      propertyPath: defaultSkin.isPurchased
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3aab7a3de93f2d4aad8d3d16ea3eb3d, type: 3}
 --- !u!1 &2001694188
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,9 +5931,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2001694193}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 2001694194}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5874,6 +5995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level14
   CodingType: 0
+  SkinType: 0
 --- !u!114 &2001694194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5886,7 +6008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 14
+  Levelnum: 14
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 595272429}
@@ -6112,9 +6234,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111104313}
-        m_TargetAssemblyTypeName: OnClick, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 2111104314}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: OnClickLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6176,6 +6298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Level5
   CodingType: 0
+  SkinType: 0
 --- !u!114 &2111104314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6188,7 +6311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908e202aebdcca84383f0e66e59ab238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelIndex: 5
+  Levelnum: 5
   lockedSprite: {fileID: 5783416599399022740, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   unlockedSprite: {fileID: 1032802241139969492, guid: b527ffcd217c42545baa01030d46d04c, type: 3}
   txt: {fileID: 169838743}
@@ -6201,3 +6324,4 @@ SceneRoots:
   - {fileID: 602898450}
   - {fileID: 249942944}
   - {fileID: 354123241}
+  - {fileID: 1988819956}

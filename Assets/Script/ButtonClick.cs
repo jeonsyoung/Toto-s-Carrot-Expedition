@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +7,8 @@ public class ButtonClick : MonoBehaviour
     public string SceneName;
     public int CodingType;
     public int SkinType;
+
+    public GameObject GameExit;
 
     public void SceneChange()
     {
@@ -44,5 +47,22 @@ public class ButtonClick : MonoBehaviour
     public void StopCode()
     {
         LevelManager.Instance.StopCode();
+    }
+
+    public void ResetSave()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        GameExit.SetActive(true);
+    }
+
+    public void Exit()
+    {
+    #if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+    #else
+            Application.Quit();
+    #endif
     }
 }

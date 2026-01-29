@@ -282,7 +282,7 @@ public class LevelManager : MonoBehaviour
 
         int score = CalculateScore();
 
-        ShowStars(score);
+        ShowStars(score); 
         SaveScore(score);
 
         ClearHighlight();
@@ -301,7 +301,15 @@ public class LevelManager : MonoBehaviour
 
         ScorePanel.SetActive(true);
 
-        GameManager.Instance.currentClearLevel++;
+        int clearedLevel = GameManager.Instance.currentPlayingLevel;
+
+        if (clearedLevel == GameManager.Instance.currentClearLevel + 1)
+        {
+            GameManager.Instance.currentClearLevel++;
+        }
+
+        GameManager.Instance.SaveData();
+
     }
 
     public void OnCarrotCollected()

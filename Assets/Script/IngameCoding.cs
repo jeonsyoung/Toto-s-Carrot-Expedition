@@ -56,7 +56,12 @@ public class IngameCoding : MonoBehaviour
 
     public void ApplySkin()
     {
-        PlayerSkin skin = GameManager.Instance.currentSkin;
+        int index = GameManager.Instance.currentSkinIndex;
+
+        if (index < 0 || index >= GameManager.Instance.allSkins.Length)
+            index = 0;
+
+        PlayerSkin skin = GameManager.Instance.allSkins[index];
 
         rabbit_Front = skin.front;
         rabbit_Right = skin.right;
@@ -65,6 +70,7 @@ public class IngameCoding : MonoBehaviour
 
         UpdateSprite();
     }
+
 
 
     public IEnumerator PushButton()

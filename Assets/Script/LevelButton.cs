@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelButton : MonoBehaviour
 {
-    public int levelIndex;
+    public int Levelnum;
 
     [Header("Sprites")]
-    public Sprite lockedSprite;    // 기본 잠금 이미지
-    public Sprite unlockedSprite;  // 해금 이미지
+    public Sprite lockedSprite;
+    public Sprite unlockedSprite;
 
     [Header("UI")]
-    public GameObject txt;         // 하위 텍스트
+    public GameObject txt;
     public Button button;
 
     Image img;
@@ -21,24 +22,22 @@ public class LevelButton : MonoBehaviour
         UpdateState();
     }
 
+    public void OnClickLevel()
+    {
+        // 여기서 바로 넘김
+        GameManager.Instance.currentPlayingLevel = Levelnum;
+
+        SceneManager.LoadScene("Level"+ Levelnum);
+    }
+
     public void UpdateState()
     {
         int cleared = GameManager.Instance.currentClearLevel;
 
-        // 이전 레벨을 클리어했으면 해금
-        if (levelIndex == cleared + 1)
-        {
+        if (Levelnum <= cleared + 1)
             SetUnlocked();
-        }
-        else if (levelIndex <= cleared)
-        {
-            // 이미 플레이했던 레벨 (이미지는 그대로 두거나 unlocked 유지)
-            SetUnlocked();
-        }
         else
-        {
             SetLocked();
-        }
     }
 
     void SetLocked()

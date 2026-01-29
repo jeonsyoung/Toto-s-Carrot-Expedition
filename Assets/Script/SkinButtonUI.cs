@@ -4,9 +4,22 @@ using UnityEngine.UI;
 
 public class SkinButtonUI : MonoBehaviour
 {
-    public PlayerSkin skin;
+    public int skinIndex;
+
+    PlayerSkin skin;
+
     public TextMeshProUGUI buttonText;
     public Button button;
+
+    void Awake()
+    {
+        if (GameManager.Instance == null) return;
+
+        if (skinIndex < 0 || skinIndex >= GameManager.Instance.allSkins.Length)
+            return;
+
+        skin = GameManager.Instance.allSkins[skinIndex];
+    }
 
     void Start()
     {
@@ -15,65 +28,58 @@ public class SkinButtonUI : MonoBehaviour
 
     public void OnClick()
     {
-        // 이미 구매한 스킨
+        if (skin == null)
+        {
+            Debug.LogError("Skin null! index: " + skinIndex);
+            return;
+        }
+
         if (skin.isPurchased)
-        {
             Select();
-        }
         else
-        {
             Buy();
-        }
     }
 
     void Buy()
     {
-        if (GameManager.Instance.s_Stars < skin.price)
-        {
-            Debug.Log("별 부족");
-            return;
-        }
+        int price = GameManager.Instance.allSkins[skinIndex].price;
 
-        GameManager.Instance.s_Stars -= skin.price;
-        skin.isPurchased = true;
+        if (GameManager.Instance.s_Stars < price)
+            return;
+
+        GameManager.Instance.s_Stars -= price;
+        GameManager.Instance.SaveStars();
+
+        GameManager.Instance.SetPurchased(skinIndex);
 
         Select();
     }
 
     void Select()
     {
-        GameManager.Instance.currentSkin = skin;
+        GameManager.Instance.SaveCurrentSkin(skinIndex);
 
-        // 인게임에 있으면만 바로 반영
-        if (LevelManager.Instance != null && LevelManager.Instance.ingame != null)
-            LevelManager.Instance.ingame.ApplySkin();
+        Shop.Instance.curSkin.sprite =
+            GameManager.Instance.allSkins[skinIndex].front;
 
         RefreshAll();
-
-        Shop.Instance.curSkin.sprite = skin.front;
-
     }
-
 
     public void Refresh()
     {
-        if (!skin.isPurchased)
-        {
-            buttonText.text = "구매\n별: 10";
-        }
-        else if (GameManager.Instance.currentSkin == skin)
-        {
+        bool purchased = GameManager.Instance.IsPurchased(skinIndex);
+
+        if (!purchased)
+            buttonText.text = "구매\n별: " + GameManager.Instance.allSkins[skinIndex].price;
+        else if (skinIndex == GameManager.Instance.currentSkinIndex)
             buttonText.text = "선택됨";
-        }
         else
-        {
             buttonText.text = "선택";
-        }
     }
 
     void RefreshAll()
     {
-        foreach (SkinButtonUI ui in FindObjectsOfType<SkinButtonUI>())
+        foreach (var ui in FindObjectsByType<SkinButtonUI>(FindObjectsSortMode.None))
             ui.Refresh();
     }
 }
