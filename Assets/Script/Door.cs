@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public static Door Instance;
+
     SpriteRenderer sr;
     Collider2D col;
 
-    bool isOpen = false;
+    public bool isOpen = false;
 
     void Awake()
     {
+        Instance = this;
         sr = GetComponent<SpriteRenderer>();
         col = GetComponentInChildren<Collider2D>();
         Close();

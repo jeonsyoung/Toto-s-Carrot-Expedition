@@ -185,6 +185,10 @@ public class LevelManager : MonoBehaviour
             // 당근 UI 리셋
             if (carrotIcon != null)
                 carrotIcon.SetActive(false);
+
+            // 문 닫기
+            if (Door.Instance.isOpen)
+                Door.Instance.Close();
         }
 
         FinishPlay();

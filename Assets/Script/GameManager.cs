@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
     {
         s_Stars = PlayerPrefs.GetInt("Stars", 0);
         currentSkinIndex = PlayerPrefs.GetInt("CurrentSkin", 0);
+        currentClearLevel = PlayerPrefs.GetInt("ClearLevel", 0);
     }
 
     public void SaveStars()
