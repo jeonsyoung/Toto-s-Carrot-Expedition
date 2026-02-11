@@ -33,9 +33,16 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoadData();
         }
-        else Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        LoadData(); 
     }
 
     public bool IsPurchased(int index)
@@ -74,12 +81,23 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    void LoadData()
+    public void LoadData()
     {
-        s_Stars = PlayerPrefs.GetInt("Stars", 0);
+        if (allSkins == null || allSkins.Length == 0)
+        {
+            Debug.LogError("LoadData 실패: allSkins 아직 안 연결됨");
+            return;
+        }
+
+        for (int i = 0; i < allSkins.Length; i++)
+        {
+            allSkins[i].isPurchased =
+                PlayerPrefs.GetInt("Skin_" + i, i == 0 ? 1 : 0) == 1;
+        }
+
         currentSkinIndex = PlayerPrefs.GetInt("CurrentSkin", 0);
-        currentClearLevel = PlayerPrefs.GetInt("ClearLevel", 0);
     }
+
 
     public void SaveStars()
     {
